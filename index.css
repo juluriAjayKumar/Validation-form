@@ -1,0 +1,322 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+    transition:all 0.5s ease;
+    box-sizing: border-box;
+}
+body{
+    background-color:cadetblue;
+    border-radius:30px;
+    border-radius:30px;
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:auto;
+    width:100vw;
+}
+.center{
+    height:auto;
+    width:auto;
+    font-size:25px;
+}
+#details{
+    text-shadow:-2px -1px 0px black;
+}
+#details:hover{
+    box-shadow:0px 0px #0987a4;
+    color:#0987a4;
+}
+.heading{
+    text-shadow:-2px -1px 3px black;
+    margin-bottom:40px;
+    text-decoration: underline;
+    font-size:35px;
+    margin-top:10px;
+}
+.heading:hover{
+    box-shadow:4px 4px #0987a4;
+    color:#0987a4;
+    text-decoration:none;
+}
+.Submit{
+    height:40px;
+    width:70px;
+    margin-top:9px;
+    margin-left:90px;
+    border-radius:20px;
+    text-align:center;
+    font-size:15px;
+    cursor:pointer;
+    transition:all 200ms ease;
+    background:#B9DFFF;
+    color:#fff;
+    border:1px solid #eee;
+    box-shadow:5px 5px 5px #fff;
+    text-shadow:none;
+    text-shadow:-1px -1px 0px black;
+}
+.Submit:hover{
+    transform:scale(1.1);
+    background:#2474b1;
+    color:#fff;
+    border:1px solid #eee;
+    border-radius:20px;
+    box-shadow:5px 5px 5px #fff;
+    text-shadow:none;
+}
+input{
+    border-radius:10px;
+    font-size:20px;
+    width:280px;
+    padding:3px 0px;
+    padding-left:32px;
+    text-shadow:0.5px 0.5px 0.5px black;
+    border-bottom:2px solid black;
+    cursor:pointer;
+    
+}
+input:hover{
+    transform:scale(1.1);
+    font-size:22px;
+    text-shadow:1px 1px 1px black;
+}
+.fa-envelope,.fa-lock,.fa-mobile,.fa-user{
+    position:absolute;
+    margin-top:9px;
+    margin-left:5px; 
+}
+.formerror{
+    font-size:20px;
+    color:rgb(197, 31, 31);
+    text-shadow:-3px -3px -2px rgb(197,31,31);
+}
+.formerror:hover{
+    font-size:20px;
+    color:rgb(197, 31, 31);
+    text-shadow:-1.5px -1.5px 1px;
+    color:crimson;
+    transform:scale(2);
+}
+.box{
+    margin-bottom:15px;
+}
+@media  screen and (max-width:320px){
+    .heading{
+        font-size:32px;
+    }
+    #details{
+        font-size:24px;
+    }
+    input{
+        font-size:19px;
+    }
+    input:hover{
+        font-size:20px;
+    }
+    .formerror{
+        font-size:19px;
+    }
+    .formerror:hover{
+        font-size:20px;
+    }
+}
+@media only screen and (min-width:321px) and (max-width:375px){
+    .heading{
+        font-size:33px;
+    }
+    #details{
+        font-size:24px;
+    }
+    input{
+        width:300px;
+        font-size:20px;
+    }
+    input:hover{
+        font-size:21px;
+    }
+    .formerror{
+        font-size:20px;
+    }
+    .formerror:hover{
+        font-size:21px;
+    }
+}
+@media only screen and (min-width:376px) and (max-width:425px){
+    .heading{
+        font-size:33px;
+    }
+    #details{
+        font-size:24px;
+    }
+    input{
+        width:310px;
+        font-size:20px;
+    }
+    input:hover{
+        font-size:21px;
+    }
+    .formerror{
+        font-size:20px;
+    }
+    .formerror:hover{
+        font-size:21px;
+    }
+}
+@media only screen and (min-width:426px) and (max-width:768px){
+    .heading{
+        font-size:36px;
+    }
+    #details{
+        font-size:26px;
+    }
+    input{
+        width:330px;
+        font-size:21px;
+    }
+    input:hover{
+        font-size:22px;
+    }
+    .formerror{
+        font-size:21px;
+    }
+    .formerror:hover{
+        font-size:22px;
+    }
+    .Submit{
+        width:72px;
+        height:42px;
+        font-size:17px;
+    }
+}
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+    .heading{
+        font-size:45px;
+    }
+    #details{
+        font-size:34px;
+    }
+    input{
+        height:55px;
+        width:400px;
+        font-size:28px;
+        border-radius:15px;
+    }
+    input:hover{
+        font-size:29px;
+    }
+    .formerror{
+        font-size:28px;
+    }
+    .formerror:hover{
+        font-size:29px;
+    }
+    .Submit{
+        margin-left:115px;
+        height:53px;
+        width:92px;
+        font-size:22px;
+        border-radius:30px;
+    }
+    .Submit:hover{
+        border-radius:50px;
+
+    }
+    .fa-envelope,.fa-lock,.fa-mobile,.fa-user{
+        margin-top:15px;
+    }
+}
+/*
+@media only screen and (min-width:1025px) and (max-width:1440px){
+    .heading{
+        font-size:70px;
+    }
+    #details{
+        font-size:52px;
+    }
+    input{
+        height:75px;
+        width:620px;
+        font-size:40px;
+        border-radius:20px;
+        padding-left:45px;
+    }
+    input:hover{
+        font-size:41px;
+    }
+    .formerror{
+        font-size:40px;
+    }
+    .formerror:hover{
+        font-size:41px;
+    }
+    .Submit{
+        margin-left:210px;
+        height:80px;
+        width:130px;
+        font-size:30px;
+        border-radius:50px;
+        box-shadow:10px 10px 10px #eee; 
+    }
+    .Submit:hover{
+        border-radius:50px;
+
+    }
+    .fa-envelope,.fa-lock,.fa-mobile,.fa-user{
+        margin-top:17px;
+        font-size:40px;
+    }
+}
+
+@media only screen and (min-width:1441px){
+    .heading{
+        font-size:90px;
+    }
+    #details{
+        font-size:80px;
+    }
+    input{
+        height:115px;
+        width:850px;
+        font-size:70px;
+        border-radius:40px;
+        padding-left:75px;
+    }
+    input:hover{
+        font-size:71px;
+    }
+    .formerror{
+        font-size:70px;
+    }
+    .formerror:hover{
+        font-size:71px;
+    }
+    .Submit{
+        margin-left:300px;
+        margin-top:40px;
+        margin-bottom:10px;
+        height:120px;
+        width:230px;
+        font-size:55px;
+        text-shadow:70px 70px 70px #eee;
+        box-shadow:20px 20px 20px #eee;
+        border-radius:75px;
+    }
+    .Submit:hover{
+        border-radius:70px;
+        box-shadow:20px 20px 20px #eee;
+    }
+    .fa-envelope,.fa-lock,.fa-mobile,.fa-user{
+        margin-top:24px;
+        margin-left:10px;
+        font-size:65px;
+    }
+    .box{
+        padding:20px;
+    }
+}
+*/
